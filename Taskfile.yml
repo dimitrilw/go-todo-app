@@ -1,0 +1,22 @@
+# https://taskfile.dev/
+
+# cSpell:ignore cmds
+
+version: 3
+
+tasks:
+  default:
+    cmds:
+      - task -l
+    silent: true
+
+  lint:
+    desc: Runs golangci-lint.
+    cmds:
+      - golangci-lint run
+
+  cover:
+    desc: Runs coverage and delivers results to web browser.
+    cmds:
+      # cSpell:disable-next-line
+      - go test -coverprofile=coverage.out ./... && go tool cover -html=coverage.out

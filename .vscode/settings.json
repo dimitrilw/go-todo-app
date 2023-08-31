@@ -1,0 +1,66 @@
+{
+    // cSpell info:
+    // https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker
+    "cSpell.ignorePaths": [
+        // repo files
+        ".git",
+    ],
+    "cSpell.words": [
+        // people
+            "Dimitri",
+            "dimitrilw",
+        // repo-related words
+            "goobar", // this repo
+            "alphatrie",
+            "bridgefindtarjan",
+            "disjointset",
+            "flatten2darray",
+            "gridpos",
+            "heapgeneric",
+            "heaplessfn",
+            "heapsimple",
+            "longestcommonsubsequence",
+            "longestincreasingsubsequence",
+            "minmax",
+            "mstkruskal",
+            "primefactors",
+            "simpleheap",
+        // common code/tech terms & short-hand
+            "bools",
+            "nums",
+            "rgba",
+            "Taskfile",
+        // go terms
+            "allocs",
+            "benchmem",
+            "errcheck",
+            "golangci",
+            "gopls",
+            "gorm",
+            "pprof",
+            "staticcheck",
+            "struct",
+        // go packages
+            "dedent",
+            "fyne",
+            "gotest",
+        // misc other
+            "fubar",
+            "Kruskal", // as in Kruskal's algorithm for Minimum Spanning Tree
+            "leetcode",
+            "opensource",
+            "predeclared",
+            "Tarjan", // as in Tarjan's algorithm for finding bridges in a graph
+    ],
+    // go plugin
+    "go.testOnSave": true,
+    "go.coverOnSave": true,
+    "go.coverageDecorator": {
+        "type": "gutter",
+        "coveredHighlightColor": "rgba(64,128,128,0.5)",
+        "uncoveredHighlightColor": "rgba(128,64,64,0.25)",
+        "coveredGutterStyle": "blockgreen", // cSpell:disable-line
+        "uncoveredGutterStyle": "blockred", // cSpell:disable-line
+    },
+    "go.coverOnSingleTest": true,
+}

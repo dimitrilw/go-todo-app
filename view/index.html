@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Todo App</title>
+</head>
+
+<body>
+    <div><h1>Todo App</h1></div>
+    <div><p>
+        This page is plain-ol' HTML, but it *could* have a bunch of scripty stuff in it.
+        The net result could be a single-page app that uses the API to do all the work.
+        So, we have multiple abstracted layers. Each of these layers can be changed without
+        impacting the other layers. For example, we could change the database from SQLite to
+        Postgres, so long as the expected functions are still present.
+        <ul>
+            <li>
+                Model: data model file (model.go) that works hand-in-hand with the SQLite database 
+                that is accessed via the database.go file's functions
+            </li>
+            <li>
+                View: this page ...not much to look at, but it could be a full-blown SPA that uses
+                the API endpoints to do all the work
+            </li>
+            <li>
+                Controller: business logic (controllers) and API endpoints (router's routes)
+            </li>
+        </ul>
+    </p></div>
+</body>
+</html>
